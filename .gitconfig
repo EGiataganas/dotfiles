@@ -1,10 +1,55 @@
 [user]
 	name = Evangelos Giataganas
 	email = e.giataganas@gmail.com
-
+	username = EGiataganas
 [alias]
+  amend = commit --amend --no-edit
+  branches = branch -a
+  cb = checkout -b
+  ci = commit -v
+  co = checkout
+	clean = clean -fd
   dc = diff --cached
+	delete = branch -D
+  diffs = diff --staged
+  head = checkout -- .
+  last = log -1 HEAD
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-
+  lg5 = lg -5
+  remotes = remote -v
+	rename = branch -m
+  st = status
+  stashes = stash list
+  stashp = stash pop
+  stashu = stash -u
+  stats = shortlog -sn --no-merges
+  tags = tag -l
+  undo = reset HEAD^ --mixed
+  unstage = reset HEAD --
+  up = "git checkout master; git pull; git fetch -u"
 [apply]
   whitespace = fix
+[color]
+  ui = auto
+[core]
+	excludesfile = ~/.gitignore_global
+  whitespace = tab-in-indent
+[help]
+  autocorrect = 1
+[push]
+  default = simple
+  followTags = true
+[pull]
+  ff = only
+[merge]
+  ff = only
+  log = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[tag]
+  sort = version:refname
+[rebase]
+  autosquash = true
