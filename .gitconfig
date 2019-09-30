@@ -26,7 +26,7 @@
   tags = tag -l
   undo = reset HEAD^ --mixed
   unstage = reset HEAD --
-  up = "git checkout master; git pull; git fetch -u"
+  up = "!git checkout master; git pull; git fetch -u"
 [apply]
   whitespace = fix
 [color]
