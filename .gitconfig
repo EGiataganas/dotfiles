@@ -7,15 +7,20 @@
   branches = branch -a
   cb = checkout -b
   ci = commit -v
+	cf = !git commit --fixup=$1
   co = checkout
-	clean = clean -fd
+	cl = clean -fd
   dc = diff --cached
 	delete = branch -D
   diffs = diff --staged
+	fp = push -f
   head = checkout -- .
   last = log -1 HEAD
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lg5 = lg -5
+	ra = rebase --abort
+	rc = rebase --continue
+	ria = !git rebase --interactive --autosquash $1
   remotes = remote -v
 	rename = branch -m
   st = status
