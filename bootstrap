@@ -78,3 +78,8 @@ brew tap homebrew/cask && brew cask install chromedriver
 # Install Spectacle & configuration
 brew cask install spectacle
 cp spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+# Install Atom & configuration
+brew cask install atom
+find "$(pwd)" -name "atom" -type d | xargs -I '{}' ln -s '{}' ~/.atom
+apm install package-sync

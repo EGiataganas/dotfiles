@@ -1,0 +1,14 @@
+packages: [
+  "atom-beautify"
+  "file-icons"
+  "language-haml"
+  "linter"
+  "linter-haml"
+  "linter-jshint"
+  "linter-pylint"
+  "linter-rubocop"
+  "linter-xmllint"
+  "markdown-table-formatter"
+  "package-sync"
+  "rspec"
+]
