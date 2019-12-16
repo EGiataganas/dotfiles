@@ -5,3 +5,6 @@ sudo echo "Please type password before running the script"
 
 # Symbolic link with .dotfiles to ~/$HOME directory
 find "$(pwd)" -name ".*" -type f -maxdepth 1 | xargs -I '{}' ln -s '{}' ~
+
+# Install the CLI tools for Xcode
+xcode-select --install
