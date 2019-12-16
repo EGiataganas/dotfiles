@@ -74,3 +74,7 @@ brew cask install tor-browser
 brew cask install virtualbox
 brew cask install vlc
 brew tap homebrew/cask && brew cask install chromedriver
+
+# Install Spectacle & configuration
+brew cask install spectacle
+cp spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
