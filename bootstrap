@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
+# Ask system password
+sudo echo "Please type password before running the script"
+
 # Symbolic link with .dotfiles to ~/$HOME directory
 find "$(pwd)" -name ".*" -type f -maxdepth 1 | xargs -I '{}' ln -s '{}' ~
