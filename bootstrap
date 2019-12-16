@@ -31,3 +31,7 @@ brew install wget
 brew install wifi-password
 brew tap heroku/brew && brew install heroku
 brew tap thoughtbot/formulae && brew install parity
+
+# Install iterm & configuration
+brew cask install iterm2
+cp iterm/profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/profile.json
