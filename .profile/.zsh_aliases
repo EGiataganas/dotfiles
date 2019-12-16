@@ -1,0 +1,18 @@
+alias ...="cd ../.."
+alias cd..="cd .."
+
+alias ls="ls -F"
+alias la="ls -a"
+alias ll="ls -la"
+
+alias df="df -h"
+alias du="du -h"
+
+alias where=which
+
+alias vi=vim
+
+alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+
+alias reload="source ~/.zshrc"
