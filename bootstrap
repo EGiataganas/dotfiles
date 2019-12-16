@@ -49,3 +49,28 @@ $ eval "$(rbenv init -)"
 
 brew install nodenv
 $ eval "$(nodenv init -)"
+
+# cask
+brew cask install alfred
+brew cask install authy
+brew cask install atom
+brew cask install caffeine
+brew cask install dash
+brew cask install docker
+brew cask install evernote
+brew cask install google-chrome
+brew cask install google-drive
+brew cask install imageoptim
+brew cask install kap
+brew cask install kodi
+brew cask install lastpass
+brew cask install openemu
+brew cask install postico
+brew cask install postman
+brew cask install slack
+brew cask install sourcetree
+brew cask install spotify
+brew cask install tor-browser
+brew cask install virtualbox
+brew cask install vlc
+brew tap homebrew/cask && brew cask install chromedriver
