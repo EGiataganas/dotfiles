@@ -35,3 +35,8 @@ brew tap thoughtbot/formulae && brew install parity
 # Install iterm & configuration
 brew cask install iterm2
 cp iterm/profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/profile.json
+
+# Install zsh & oh-my-zsh configuration
+brew install zsh zsh-completions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+upgrade_oh_my_zsh
