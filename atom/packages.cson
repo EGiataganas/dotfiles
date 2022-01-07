@@ -2,6 +2,7 @@ packages: [
   "atom-beautify"
   "file-icons"
   "language-haml"
+  "language-terraform"
   "linter"
   "linter-haml"
   "linter-jshint"
@@ -11,4 +12,5 @@ packages: [
   "markdown-table-formatter"
   "package-sync"
   "rspec"
+  "sort-lines"
 ]
