@@ -37,7 +37,7 @@ brew tap heroku/brew && brew install heroku
 brew tap thoughtbot/formulae && brew install parity
 
 # Install iterm & configuration
-brew cask install iterm2
+brew install --cask iterm2
 cp iterm/profile.json ~/Library/Application\ Support/iTerm2/DynamicProfiles/profile.json
 
 # Install zsh & oh-my-zsh configuration
@@ -55,37 +55,37 @@ brew install nodenv
 $ eval "$(nodenv init -)"
 
 # cask
-brew cask install 1password
-brew cask install alfred
-brew cask install brave-browser
-brew cask install caffeine
-brew cask install dash
-brew cask install docker
-brew cask install evernote
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install imageoptim
-brew cask install kap
-brew cask install kodi
-brew cask install openemu
-brew cask install postico
-brew cask install postman
-brew cask install session-manager-plugin
-brew cask install slack
-brew cask install sourcetree
-brew cask install spotify
-brew cask install tor-browser
-brew cask install virtualbox
-brew cask install visual-studio-code
-brew cask install vlc
-brew tap homebrew/cask && brew cask install chromedriver
+brew install --cask 1password
+brew install --cask alfred
+brew install --cask brave-browser
+brew install --cask caffeine
+brew install --cask dash
+brew install --cask docker
+brew install --cask evernote
+brew install --cask google-chrome
+brew install --cask google-drive
+brew install --cask imageoptim
+brew install --cask kap
+brew install --cask kodi
+brew install --cask openemu
+brew install --cask postico
+brew install --cask postman
+brew install --cask session-manager-plugin
+brew install --cask slack
+brew install --cask sourcetree
+brew install --cask spotify
+brew install --cask tor-browser
+brew install --cask virtualbox
+brew install --cask visual-studio-code
+brew install --cask vlc
+brew install --cask chromedriver
 
 # Install Spectacle & configuration
-brew cask install spectacle
+brew install --cask spectacle
 cp spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
 # Install Atom & configuration
-brew cask install atom
+brew install --cask atom
 find "$(pwd)" -name "atom" -type d | xargs -I '{}' ln -s '{}' ~/.atom
 apm install package-sync
 
