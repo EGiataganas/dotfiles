@@ -117,11 +117,26 @@ defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextr
 defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.bluetooth" -bool true
 defaults write com.apple.systemuiserver "NSStatusItem Visible com.apple.menuextra.volume" -bool true
 
+# Quit System Preferences
+killall System\ Preferences > /dev/null 2>&1
+
 # Set the value of the IsAnalog key to false so that the digital clock is displayed
-defaults write com.apple.menuextra.clock IsAnalog -bool false
+defaults write com.apple.menuextra.clock.plist IsAnalog -bool false
 
 # Set the date and time format to display Thu 18 Aug 23:46
-defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm" && killall SystemUIServer
+defaults write com.apple.menuextra.clock.plist DateFormat -string "EEE d MMM HH:mm"
+
+# Set the various keys based upon the new format string
+# Day (Thu)
+defaults write com.apple.menuextra.clock.plist ShowDayOfWeek -bool true
+# Date (18 Aug)
+defaults write com.apple.menuextra.clock.plist ShowDayOfMonth -bool true
+# 24-hour time (23:46)
+defaults delete -g AppleICUForce12HourTime > /dev/null 2>&1\n
+defaults write com.apple.menuextra.clock.plist Show24Hour -bool true
+
+# Restart the ControlCenter process for changes to take effect
+killall ControlCenter
 
 # Set dock tilesize
 defaults write com.apple.dock tilesize -int 15 && killall Dock
