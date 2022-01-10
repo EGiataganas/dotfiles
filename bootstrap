@@ -138,7 +138,7 @@ defaults write com.apple.menuextra.clock.plist Show24Hour -bool true
 killall ControlCenter
 
 # Set dock tilesize
-defaults write com.apple.dock tilesize -int 15 && killall Dock
+defaults write com.apple.dock tilesize -int 35 && killall Dock
 
 # Set dock magnification
 defaults write com.apple.dock magnification -bool true
