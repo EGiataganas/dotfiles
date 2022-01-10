@@ -98,7 +98,7 @@ defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Show battery life percentage.
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
 
 # Adds more icons on menu bar
 defaults write com.apple.systemuiserver menuExtras -array \
@@ -150,7 +150,7 @@ defaults write com.apple.dock largesize -int 100
 defaults write com.apple.dock autohide -bool true
 
 # Show Hidden Files
-defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.Finder "AppleShowAllFiles" -bool "true" && killall Finder
 
 # Install all available software updates
 sudo softwareupdate -ia
