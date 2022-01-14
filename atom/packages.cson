@@ -1,6 +1,8 @@
 packages: [
   "atom-beautify"
+  "busy-signal"
   "file-icons"
+  "intentions"
   "language-haml"
   "language-terraform"
   "linter"
@@ -8,6 +10,7 @@ packages: [
   "linter-jshint"
   "linter-pylint"
   "linter-rubocop"
+  "linter-ui-default"
   "linter-xmllint"
   "markdown-table-formatter"
   "package-sync"
