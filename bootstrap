@@ -47,8 +47,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # iTerm2: Install Shell Integration
 curl -L https://iterm2.at/install_shell_integration.sh | bash
 
-brew install rbenv ruby-build
-$ eval "$(rbenv init -)"
+brew install rbenv
+rbenv init
 
 brew install nodenv
 $ eval "$(nodenv init -)"
