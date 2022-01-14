@@ -58,6 +58,7 @@ brew install --cask 1password
 brew install --cask alfred
 brew install --cask brave-browser
 brew install --cask caffeine
+brew install --cask chromedriver
 brew install --cask dash
 brew install --cask docker
 brew install --cask evernote
@@ -65,11 +66,14 @@ brew install --cask google-chrome
 brew install --cask google-drive
 brew install --cask imageoptim
 brew install --cask kap
+brew install --cask keka
 brew install --cask kodi
+brew install --cask microsoft-teams
 brew install --cask openemu
 brew install --cask postico
 brew install --cask postman
 brew install --cask session-manager-plugin
+brew install --cask shazam
 brew install --cask slack
 brew install --cask sourcetree
 brew install --cask spotify
@@ -77,7 +81,7 @@ brew install --cask tor-browser
 brew install --cask virtualbox
 brew install --cask visual-studio-code
 brew install --cask vlc
-brew install --cask chromedriver
+brew install --cask zoom
 
 # Install Spectacle & configuration
 brew install --cask spectacle
