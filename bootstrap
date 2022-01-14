@@ -50,8 +50,26 @@ curl -L https://iterm2.at/install_shell_integration.sh | bash
 brew install rbenv
 rbenv init
 
-brew install nodenv
-$ eval "$(nodenv init -)"
+brew install nvm
+
+# Create a folder for the current user .nvm where the files will reside
+mkdir ~/.nvm
+
+# Reload zsh
+source ~/.zshrc
+
+# Install a node version
+nvm install node
+
+# Use the node version installed with NVM
+nvm use node
+
+# Print the node version
+nvm run node --version
+
+echo 'export NVM_DIR="$HOME/.nvm"
+NVM_HOMEBREW="/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_HOMEBREW" ] && \. "$NVM_HOMEBREW"' >> ~/.zshenv
 
 # cask
 brew install --cask 1password
