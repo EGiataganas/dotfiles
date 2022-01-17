@@ -1,0 +1,7 @@
+--database=postgresql
+--webpack
+--skip-spring
+--skip-test
+--skip-sprockets
+--skip-turbolinks
+--skip-action-cable
