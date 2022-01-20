@@ -26,10 +26,11 @@ brew install graphicsmagick
 brew install graphviz
 brew install httpie
 brew install imagemagick
+brew install jq
 brew install mysql
-brew install redis
 brew install postgresql
 brew install pstree
+brew install redis
 brew install tfenv
 brew install tree
 brew install webkit2png
