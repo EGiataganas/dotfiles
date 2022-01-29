@@ -81,6 +81,7 @@ brew install --cask alfred
 brew install --cask brave-browser
 brew install --cask caffeine
 brew install --cask chromedriver
+brew install --cask chromium
 brew install --cask dash
 brew install --cask docker
 brew install --cask evernote
