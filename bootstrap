@@ -28,6 +28,7 @@ brew install httpie
 brew install imagemagick
 brew install jq
 brew install mysql
+brew install poppler
 brew install postgresql
 brew install pstree
 brew install redis
