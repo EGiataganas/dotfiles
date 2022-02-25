@@ -104,7 +104,6 @@ brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask tor-browser
 brew install --cask virtualbox
-brew install --cask visual-studio-code
 brew install --cask vlc
 brew install --cask zoom
 
@@ -116,6 +115,12 @@ cp spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.j
 brew install --cask atom
 find "$(pwd)" -name "atom" -type d | xargs -I '{}' ln -s '{}' ~/.atom
 apm install package-sync
+
+#Install VSCode & configuration
+brew install --cask visual-studio-code
+find "$(pwd)" -name "settings.json" -type d | xargs -I '{}' ln -s '{}' ~/.settings.json
+
+cp 'code/settings.json' ~/Library/Application\ Support/Code/User
 
 # Change screenshots format
 defaults write com.apple.screencapture type jpg

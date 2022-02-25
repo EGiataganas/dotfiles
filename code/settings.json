@@ -1,0 +1,9 @@
+{
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "emmet.triggerExpansionOnTab": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "vscode-icons",
+}
