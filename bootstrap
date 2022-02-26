@@ -103,6 +103,7 @@ brew install --cask slack
 brew install --cask sourcetree
 brew install --cask spotify
 brew install --cask tor-browser
+brew install --cask utorrent
 brew install --cask virtualbox
 brew install --cask vlc
 brew install --cask zoom
