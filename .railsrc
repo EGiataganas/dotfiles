@@ -1,7 +1,5 @@
+--css=bootstrap
 --database=postgresql
---webpack
---skip-spring
---skip-test
---skip-sprockets
---skip-turbolinks
+--javascript=esbuild
 --skip-action-cable
+--skip-test
