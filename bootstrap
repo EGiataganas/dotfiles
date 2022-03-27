@@ -101,6 +101,7 @@ brew install --cask postico
 brew install --cask postman
 brew install --cask session-manager-plugin
 brew install --cask shazam
+brew install --cask skype
 brew install --cask slack
 brew install --cask sourcetree
 brew install --cask spotify
