@@ -19,7 +19,6 @@ xcode-select --install
 brew install ansible
 brew install awscli
 brew install direnv
-brew install docker docker-compose docke-machine
 brew install ffmpeg
 brew install git
 brew install graphicsmagick
